@@ -1,0 +1,36 @@
+<!-- subject: Welcome to {{ app_name }} -->
+<mjml>
+  <mj-head>
+    <mj-title>Welcome</mj-title>
+    <mj-attributes>
+      <mj-all font-family="Arial, sans-serif" />
+      <mj-text font-size="14px" color="#333333" line-height="1.6" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="#f4f4f4">
+    <mj-section background-color="#ffffff" padding="40px 20px">
+      <mj-column>
+        <mj-text font-size="24px" font-weight="bold" align="center" color="#1a1a1a">
+          Welcome to {{ app_name }}!
+        </mj-text>
+        <mj-text padding-top="20px">
+          Hi {{ user_name }},
+        </mj-text>
+        <mj-text>
+          Your email has been verified and your account is now active. We're excited to have you on board!
+        </mj-text>
+        <mj-text padding-top="20px" font-weight="bold">
+          Getting Started:
+        </mj-text>
+        <mj-text>
+          - Complete your profile to personalize your experience<br/>
+          - Explore our features and discover what you can do<br/>
+          - Reach out to support if you need any help
+        </mj-text>
+        <mj-text color="#666666" font-size="12px" padding-top="30px">
+          Thank you for choosing {{ app_name }}.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

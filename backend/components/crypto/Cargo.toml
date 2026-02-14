@@ -1,0 +1,40 @@
+[package]
+name = "k_crypto"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "High-performance cryptographic library for K Services"
+
+[lib]
+name = "k_crypto"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.24", features = ["extension-module", "abi3-py310"] }
+
+# Hashing
+argon2 = "0.5"
+blake3 = "1.5"
+sha3 = "0.10"
+
+# Encryption
+aes-gcm = "0.10"
+chacha20poly1305 = "0.10"
+
+# Signing
+hmac = "0.12"
+sha2 = "0.10"
+ed25519-dalek = { version = "2.1", features = ["rand_core"] }
+
+# Utilities
+rand = "0.8"
+base64 = "0.22"
+hex = "0.4"
+zeroize = { version = "1.8", features = ["derive"] }
+thiserror = "2.0"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true

@@ -1,0 +1,10 @@
+pub const AES_KEY_SIZE: usize = 32;
+pub const AES_NONCE_SIZE: usize = 12;
+pub const CHACHA_KEY_SIZE: usize = 32;
+pub const CHACHA_NONCE_SIZE: usize = 12;
+pub const HMAC_MIN_KEY_SIZE: usize = 32;
+pub const ED25519_PRIVATE_KEY_SIZE: usize = 32;
+pub const ED25519_PUBLIC_KEY_SIZE: usize = 32;
+pub const ED25519_SIGNATURE_SIZE: usize = 64;
+pub const ARGON2_SALT_SIZE: usize = 16;
+pub const ARGON2_OUTPUT_SIZE: usize = 32;
